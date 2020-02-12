@@ -790,7 +790,7 @@
         "trainResult": {
           "$ref": "#/definitions/TrainResult"
         },
-        "combinedTrainedResults": {
+        "composedTrainedResults": {
           "type": "object",
           "additionalProperties": {
             "$ref": "#/definitions/TrainResult"
@@ -906,15 +906,15 @@
         }
       }
     },
-    "CombineRequest": {
-      "description": "Request contract for combine operation.",
+    "ComposeRequest": {
+      "description": "Request contract for compose operation.",
       "required": [
         "modelIds"
       ],
       "type": "object",
       "properties": {
         "modelIds": {
-          "description": "List of model ids to combine.",
+          "description": "List of model ids to compose.",
           "uniqueItems": false,
           "type": "array",
           "items": {
